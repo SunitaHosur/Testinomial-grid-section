@@ -170,7 +170,4 @@ color: var(--Very-dark-grayish-blue);
     .lg-grid-row-1{
         grid-row: 1/3;
     }
-    .lg-mt-135{
-        margin-top: 135px;
-        }
 }
