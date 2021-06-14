@@ -1,0 +1,176 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/* body */
+.font-sans{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.text-sm{
+    font-size: 13px;
+}
+.bg-gray{
+    background-color:var(--Light-grayish-blue);
+}
+.max-h-screen{
+    max-height: 100vh;
+}
+/* container */
+.m-1{
+    margin: 20px;
+}
+.grid{
+    display: grid;
+}
+.grid-cols-1{
+    grid-template-columns: 1fr;
+}
+.gap-5{
+    gap: 20px;
+}
+/* cards */
+.text-darkgry{
+    color:var(--Very-dark-blackish-blue);
+}
+.text-gray{
+    color: hsl(0, 0%, 46%);
+}
+.text-grayblue{
+    color: var(--Very-dark-grayish-blue);
+}
+.text-grayish{
+    color: hsl(0, 0%, 60%);
+}
+.font-semibold{
+    font-weight: 600;
+}
+.font-medium{
+    font-weight: 500;
+}
+.relative{
+    position: relative;
+    z-index: 0;
+}
+.p-1{
+    padding: 20px;
+}
+.bg-purple{
+background-color: var(--Moderate-violet);
+}
+.bg-grayblue{
+    background-color: var(--Very-dark-grayish-blue);
+}
+.bg-blckBlue{
+    background-color: var(--Very-dark-blackish-blue);
+}
+.bg-white{
+    background-color: var(--White);
+}
+.rounded{
+    border-radius: 10px;
+}
+.text-white{
+    color: var(--White);
+}
+
+/* cards img */
+.absolute{
+    position: absolute;
+    z-index: -1;
+}
+.right-2{
+right: 20px;
+}
+.w-20{
+    width: 17%;
+}
+.top-0{
+    top: 0;
+}
+.opacity-7{
+opacity: 70%;
+}
+.opacity-5{
+    opacity: 50%;
+}
+/* image */
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.w-4{
+    width: 35px;
+}
+/* img */
+.rounded-lg{
+    border-radius: 50%;
+}
+.mr-8{
+    margin-right: 10px;
+}
+/* heading */
+
+.m-all{
+    margin: 10px 0px 20px 0px;
+}
+.text-xl{
+    font-size: 20px;
+}.text-blue{
+color: var(--Very-dark-grayish-blue);
+}
+/* paragraph */
+.text-base{
+    font-size: 17px;
+}
+.leading-5{
+    line-height: 1.4;
+}
+
+@media (min-width:640px){
+    .md-grid-cols-1{
+        grid-template-columns: repeat(2, 1fr);
+    }  
+}
+
+@media (min-width:1280px){
+    /* container */
+    .lg-grid-cols-1{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .lg-max-w-6xl{
+        max-width: 1200px;
+    }
+    .lg-mx-my{
+        margin: 50px auto;
+    }
+    /* first card */
+    .lg-grid-col-1{
+        grid-column: 1/3;
+    }
+    /* fourth card */
+    .lg-grid-col-2{
+        grid-column: 2/4;
+    }
+      /* fifth card*  */ 
+    .lg-grid-col-4{
+        grid-column: 4;
+    }
+    .lg-grid-row-1{
+        grid-row: 1/3;
+    }
+    .lg-mt-135{
+        margin-top: 135px;
+        }
+}
